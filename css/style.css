@@ -1,0 +1,83 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('img/JOEL.jpg') no-repeat center center/cover;
+    font-family: 'Arial', sans-serif;
+    object-fit: cover;
+}
+
+.greetings {
+    font-size: 3rem; /* Cambia este valor para ajustar el tamaño */
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    flex-direction: column; /* Cambiado para que los br se respeten */
+    align-items: center; /* Centra los elementos */
+}
+
+.greetings > span {
+    animation: glow 2.5s ease-in-out infinite;
+    margin: 0 5px; /* Espaciado horizontal */
+    display: inline-block; /* Permite que los <br> funcionen correctamente */
+}
+
+.description {
+    font-size: 1.8rem;
+    color: rgb(236, 41, 109);
+    text-align: center;
+}
+
+.botones {
+    padding: 9px;
+    border-radius: 80px;
+    background-color: transparent;
+    border: none;
+}
+
+.botones a {
+    background-color: #690376;
+    padding: 9px;
+    border-radius: 80px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.botones a:focus {
+    background-color: rgb(88, 4, 59);
+}
+
+/* Animación de brillo (glow) */
+@keyframes glow {
+    0%, 100% {
+        color: #eff242;
+        text-shadow: 
+          -2px -2px 0 #000,  
+          2px -2px 0 #000,   
+          -2px 2px 0 #000,   
+          2px 2px 0 #000;
+    }
+    50% {
+        color: #e4bbf5;
+        text-shadow: none;
+    }
+}
+
+/* Aplicación de animación con retraso para cada letra */
+.greetings span:nth-child(1) { animation-delay: 0s; }
+.greetings span:nth-child(2) { animation-delay: 0.2s; }
+.greetings span:nth-child(3) { animation-delay: 0.4s; }
+.greetings span:nth-child(4) { animation-delay: 0.6s; }
+.greetings span:nth-child(5) { animation-delay: 0.8s; }
+.greetings span:nth-child(6) { animation-delay: 1s; }
+.greetings span:nth-child(7) { animation-delay: 1.2s; }
+.greetings span:nth-child(8) { animation-delay: 1.4s; }
+.greetings span:nth-child(9) { animation-delay: 1.6s; }
+.greetings span:nth-child(10) { animation-delay: 1.8s; }
+.greetings span:nth-child(11) { animation-delay: 2s; }
+.greetings span:nth-child(12) { animation-delay: 2.2s; }
